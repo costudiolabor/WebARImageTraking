@@ -155,7 +155,7 @@
                 while (window.requestingForPermissions) {
                     // Wait until requestingForPermissions becomes true.
                     console.log("Waiting for permissions...");
-                    await new Promise(resolve => setTimeout(resolve, 1000)); // Adjust the delay time as needed.
+                    await new Promise(resolve => setTimeout(resolve, 10)); // Adjust the delay time as needed.
                 }
                 console.log("Got Permissions");
                 if(window.webcamStream)
